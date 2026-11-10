@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#160c29" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%23ff6b31'/%3E%3Ctext%20x='32'%20y='45'%20font-family='sans-serif'%20font-size='34'%20font-weight='800'%20text-anchor='middle'%20fill='%23160c29'%3ESG%3C/text%3E%3C/svg%3E" />
+
+  <title>Werde zum Glühstar – SG EVENTWERK</title>
+  <meta name="description" content="Werde zum Glühstar – die Glühwein-Rallye von SG EVENTWERK durch Osnabrücks Kneipen und den Weihnachtsmarkt. Fragen lösen, Stationen finden, QR scannen, Gewinne sichern. Tickets jetzt sichern." />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="SG EVENTWERK – zur Startseite">
+        <span class="logo-sg">SG</span><span class="logo-ew">EVENTWERK</span>
+      </a>
+      <a href="#tickets" class="button button-sm">Tickets</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero event-hero">
+      <div class="container hero-inner">
+        <p class="hero-kicker">Glühwein-Rallye · Osnabrück</p>
+        <h1>Werde zum Glühstar ✨</h1>
+        <p class="hero-text">
+          Kneipen, Weihnachtsmarkt und eine Rallye voller Rätsel: Löse Fragen,
+          finde die nächste Station, genieße dein Getränk – und werde zum Glühstar.
+        </p>
+        <button class="button" id="konzeptBtn" aria-expanded="false" aria-controls="konzept">Werde zum Glühstar</button>
+        <a href="#tickets" class="button button-sek">Direkt zu den Tickets</a>
+      </div>
+    </section>
+
+    <!-- Aufklappbare Beschreibung (öffnet per Button oben) -->
+    <section id="konzept" class="section section-alt konzept-panel" aria-hidden="true">
+      <div class="container">
+        <h2>Wie läuft Glühstar ab?</h2>
+        <p class="konzept-intro">
+          Glühstar ist eine Glühwein-Rallye durch Osnabrücks Kneipen und über den
+          Weihnachtsmarkt. Statt eines festen Plans führt euch ein Rätsel zum nächsten
+          Stopp – gesteuert über unsere <strong>eigens entwickelte App</strong>.
+        </p>
+        <div class="cards">
+          <article class="card"><h3><span class="schritt-nr">1 ·</span> App starten</h3>
+            <p>Die Rallye läuft über unsere eigens entwickelte Glühstar-App – sie führt euch durch den ganzen Abend.</p></article>
+          <article class="card"><h3><span class="schritt-nr">2 ·</span> Fragen lösen</h3>
+            <p>Jede Frage verrät, wo die nächste Station wartet. Köpfchen schlägt Zufall.</p></article>
+          <article class="card"><h3><span class="schritt-nr">3 ·</span> Station &amp; Getränk</h3>
+            <p>An jeder Station gibt's das passende Getränk – Glühwein &amp; Co.</p></article>
+          <article class="card"><h3><span class="schritt-nr">4 ·</span> QR-Code scannen</h3>
+            <p>Die App bestätigt eure Station per QR-Code und sichert eure Punkte.</p></article>
+          <article class="card"><h3><span class="schritt-nr">5 ·</span> Gewinne abstauben</h3>
+            <p>Die besten Glühstars räumen am Ende Preise ab.</p></article>
+        </div>
+        <span class="app-hinweis">📱 Eigens entwickelte Glühstar-App inklusive</span>
+      </div>
+    </section>
+
+    <!-- Interaktive Karte -->
+    <section class="section">
+      <div class="container">
+        <h2>Deine Glühstar-Karte</h2>
+        <p class="intro">In der App füllt sich deine Karte mit jeder bestätigten Station. Tipp zum Ausprobieren auf die Kreise:</p>
+        <div class="stempelkarte" id="karte" aria-label="Stationskarte zum Ausprobieren"></div>
+        <p class="score" id="score">0 / 6 Stationen</p>
+      </div>
+    </section>
+
+    <!-- Tickets -->
+    <section id="tickets" class="section section-alt">
+      <div class="container">
+        <h2>Tickets</h2>
+        <p class="intro">Begrenzte Plätze – sichert euch rechtzeitig euren Startplatz.</p>
+        <div class="ticket-box">
+          <div class="ticket-preis">5&nbsp;€ <small>Anmeldegebühr</small></div>
+          <ul class="ticket-liste">
+            <li>Zugang zur Glühstar-App</li>
+            <li>Glühwein &amp; Getränke an den Stationen</li>
+            <li>Rätsel-Rallye durch Osnabrück</li>
+            <li>Chance auf Gewinne für die besten Glühstars</li>
+          </ul>
+          <p class="ticket-termin">📅 Termin: <strong>10. Dezember 2026</strong> · Start in Osnabrück</p>
+          <p style="margin-top:1.5rem">
+            <a class="button" href="mailto:elisa@sg-eventwerk.de?subject=Ticket%20Werde%20zum%20Gl%C3%BChstar&body=Hallo%20SG%20EVENTWERK%2C%20ich%20m%C3%B6chte%20gern%20Tickets%20f%C3%BCr%20%22Werde%20zum%20Gl%C3%BChstar%22.%20Anzahl%3A%20">Ticket anfragen</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-slogan">out of the ordinary</p>
+      <p>&copy; <span id="jahr">2026</span> SG EVENTWERK · Osnabrück ·
+        <a href="index.html" style="color:var(--akzent);text-decoration:none">zurück zur Startseite</a></p>
+      <p class="footer-links">
+        <a href="impressum.html">Impressum</a> ·
+        <a href="datenschutz.html">Datenschutz</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('jahr').textContent = new Date().getFullYear();
+
+    // Beschreibung auf-/zuklappen
+    var btn = document.getElementById('konzeptBtn');
+    var panel = document.getElementById('konzept');
+    btn.addEventListener('click', function () {
+      var open = panel.classList.toggle('offen');
+      btn.setAttribute('aria-expanded', open);
+      panel.setAttribute('aria-hidden', !open);
+      btn.textContent = open ? 'Beschreibung ausblenden' : 'Werde zum Glühstar';
+      if (open) { setTimeout(function () { panel.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 120); }
+    });
+
+    // Interaktive Stationskarte
+    var karte = document.getElementById('karte');
+    var scoreEl = document.getElementById('score');
+    var ZIEL = 6;
+    for (var i = 0; i < ZIEL; i++) {
+      var s = document.createElement('div');
+      s.className = 'stempel';
+      s.setAttribute('role', 'button');
+      s.setAttribute('tabindex', '0');
+      s.addEventListener('click', toggle);
+      s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle.call(this); } });
+      karte.appendChild(s);
+    }
+    function toggle() {
+      this.classList.toggle('voll');
+      this.textContent = this.classList.contains('voll') ? '🍷' : '';
+      update();
+    }
+    function update() {
+      var n = karte.querySelectorAll('.stempel.voll').length;
+      if (n >= ZIEL) {
+        scoreEl.textContent = '🏆 Glühstar! ' + n + ' / ' + ZIEL;
+        scoreEl.classList.add('gewonnen');
+      } else {
+        scoreEl.textContent = n + ' / ' + ZIEL + ' Stationen';
+        scoreEl.classList.remove('gewonnen');
+      }
+    }
+    update();
+  </script>
+</body>
+</html>
