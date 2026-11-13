@@ -10,6 +10,14 @@
 // Abschnitte für die Einblend-Animation zunächst ausgeblendet.
 document.documentElement.classList.add("js");
 
+// Logo-Reveal: Overlay nach der Animation entfernen, nur einmal pro Sitzung
+(function () {
+  var intro = document.getElementById("intro");
+  if (!intro) return;
+  try { sessionStorage.setItem("sgIntro", "1"); } catch (e) {}
+  setTimeout(function () { if (intro.parentNode) intro.parentNode.removeChild(intro); }, 4400);
+})();
+
 document.addEventListener("DOMContentLoaded", function () {
 
   /* --- 1. Handy-Menü --- */
